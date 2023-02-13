@@ -235,3 +235,17 @@ for (let i = 0; i < massiveTrue.length; i++) {
 	}
 }
 //!-------------------------------------------
+//https://www.codewars.com/kata/57a77726bb9944d000000b06/train/javascript
+function mango(quantity, price) {
+	if (price === 3) {
+		const chislo = Math.floor(quantity / 3);
+		const itogo = quantity - chislo;
+		return itogo * price;
+	} else {
+		const chislo = Math.floor(quantity / 3);
+		const itogo = quantity - chislo;
+		return itogo * price;
+	}
+}
+
+//!-------------------------------------------
