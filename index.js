@@ -256,14 +256,31 @@ function sayHello(name) {
 }
 //!--------------------------------------------
 const lolz1 = `jopa`;
-const massives = lolz1.split(``);
+let massives = lolz1.split(``);
+const removed = massives.splice(0, 1);
+const removedLast = removed.pop();
+console.log(removedLast);
 
 //www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/javascript
-
-https: function century(year) {
+function century(year) {
 	if (year / 100 === Math.floor(year / 100)) {
 		return year / 100;
 	} else {
 		return Math.floor(year / 100) + 1;
 	}
 }
+//!---------------------------------
+https://www.codewars.com/kata/559d2284b5bb6799e9000047/solutions/javascript
+const lolh = `lohi lolz`;
+const massivs = lolh.split(` `);
+const massivNew = [];
+
+for (let i = 0; i < massivs.length; i++) {
+	massivNew[i] = massivs[i] + ` ` + massivs[i].length;
+}
+console.log(massivNew);
+
+const massa = massivs.map((item) => item + ` ` + item.length);
+console.log(massa);
+
+
