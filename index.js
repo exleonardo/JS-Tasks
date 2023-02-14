@@ -255,3 +255,15 @@ function sayHello(name) {
 	return "Hello, " + name;
 }
 //!--------------------------------------------
+const lolz1 = `jopa`;
+const massives = lolz1.split(``);
+
+//www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/javascript
+
+https: function century(year) {
+	if (year / 100 === Math.floor(year / 100)) {
+		return year / 100;
+	} else {
+		return Math.floor(year / 100) + 1;
+	}
+}
