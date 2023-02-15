@@ -283,7 +283,7 @@ function century(year) {
 // const massa = massivs.map((item) => item + ` ` + item.length);
 // console.log(massa);
 
-https://www.codewars.com/kata/515e271a311df0350d00000f/solutions/javascript
+//https://www.codewars.com/kata/515e271a311df0350d00000f/solutions/javascript
 const numbers = [];
 if (numbers.length === 0) {
 	return 0;
@@ -293,13 +293,32 @@ console.log(jop);
 const plus = jop.reduce((item, next) => item + next);
 console.log(plus);
 //!--------------------------------
-https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
+//https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
 function isDivisible(n, x, y) {
-  const numbr = n;
-const numbr2 = x;
-const numbr3= y;
-  if(Math.round(numbr/numbr2)===numbr/numbr2){
-	const jop = Math.round(numbr/numbr3)===numbr/numbr3;
-	return jop
-}else return false
+	const numbr = n;
+	const numbr2 = x;
+	const numbr3 = y;
+	if (Math.round(numbr / numbr2) === numbr / numbr2) {
+		const jop = Math.round(numbr / numbr3) === numbr / numbr3;
+		return jop;
+	} else return false;
 }
+
+let start = 1;
+const finish = 5;
+let itog = 0;
+// if (start + 1 <= finish) {
+// 	itog++;
+// 	if (start <= finish) {
+// 		start = start + 3;
+// 		itog++;
+// 	}
+// }
+
+//https://www.codewars.com/kata/59a8570b570190d313000037/solutions/javascript
+const nine = 2;
+let itogovoe = 0;
+for (let i = 1; i <= nine; i++) {
+	itogovoe = itogovoe + i ** 3;
+}
+console.log(itogovoe);
