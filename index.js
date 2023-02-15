@@ -270,17 +270,25 @@ function century(year) {
 	}
 }
 //!---------------------------------
-https://www.codewars.com/kata/559d2284b5bb6799e9000047/solutions/javascript
-const lolh = `lohi lolz`;
-const massivs = lolh.split(` `);
-const massivNew = [];
+// https://www.codewars.com/kata/559d2284b5bb6799e9000047/solutions/javascript
+// const lolh = `lohi lolz`;
+// const massivs = lolh.split(` `);
+// const massivNew = [];
 
-for (let i = 0; i < massivs.length; i++) {
-	massivNew[i] = massivs[i] + ` ` + massivs[i].length;
+// for (let i = 0; i < massivs.length; i++) {
+// 	massivNew[i] = massivs[i] + ` ` + massivs[i].length;
+// }
+// console.log(massivNew);
+
+// const massa = massivs.map((item) => item + ` ` + item.length);
+// console.log(massa);
+
+https://www.codewars.com/kata/515e271a311df0350d00000f/solutions/javascript
+const numbers = [];
+if (numbers.length === 0) {
+	return 0;
 }
-console.log(massivNew);
-
-const massa = massivs.map((item) => item + ` ` + item.length);
-console.log(massa);
-
-
+const jop = numbers.map((item) => item ** 2);
+console.log(jop);
+const plus = jop.reduce((item, next) => item + next);
+console.log(plus);
