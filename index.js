@@ -292,3 +292,14 @@ const jop = numbers.map((item) => item ** 2);
 console.log(jop);
 const plus = jop.reduce((item, next) => item + next);
 console.log(plus);
+//!--------------------------------
+https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
+function isDivisible(n, x, y) {
+  const numbr = n;
+const numbr2 = x;
+const numbr3= y;
+  if(Math.round(numbr/numbr2)===numbr/numbr2){
+	const jop = Math.round(numbr/numbr3)===numbr/numbr3;
+	return jop
+}else return false
+}
