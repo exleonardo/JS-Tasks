@@ -322,3 +322,63 @@ for (let i = 1; i <= nine; i++) {
 	itogovoe = itogovoe + i ** 3;
 }
 console.log(itogovoe);
+//!------------------------------------------------------------------
+const lox = `The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog`;
+const converToMassiv = lox.split(``);
+let filtMassiv = ``;
+
+// for (let i = 0; i < converToMassiv.length; i++) {
+// 	if (!isNaN(converToMassiv[i])) {
+// 		filtMassiv = filtMassiv + converToMassiv[i];
+// 	}
+// }
+
+// console.log(filtMassiv);
+// const sorting = filtMassiv.split(``);
+// console.log(sorting);
+
+const filters = converToMassiv.filter((item) => !isNaN(item));
+console.log(filters);
+
+const joins = filters.reduce((acc, next) => Number(acc) + Number(next));
+console.log(joins);
+
+//!-----------------------------------------------
+//www.codewars.com/kata/5a34af40e1ce0eb1f5000036
+function toCsvText(array) {
+	const lilPip = array;
+	let massiveToString = ``;
+
+	for (let i = 0; i < lilPip.length; i++) {
+		if (lilPip[lilPip.length - 1] === lilPip[i]) {
+			massiveToString += lilPip[i].toString();
+		} else {
+			massiveToString += lilPip[i].toString() + "\n";
+		}
+	}
+	return massiveToString;
+}
+//!----------------------------------------------------------
+//https://www.codewars.com/kata/57613fb1033d766171000d60/train/javascript
+function uefaEuro2016(teams, scores) {
+	if (scores[0] > scores[1]) {
+		return `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`;
+	} else if (scores[0] < scores[1]) {
+		return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`;
+	} else {
+		return `At match ${teams[0]} - ${teams[1]}, teams played draw.`;
+	}
+}
+
+const chisl = 123;
+const massives1 = chisl.split(``);
+
+console.log(massives1);
+
+//!----------------------------------------------------
+// https://www.codewars.com/kata/563d59dd8e47a5ed220000ba/solutions/javascript
+const lol = 0;
+const lolToMassiv = lol.toString().split(``);
+const convertSumm = lolToMassiv.reduce((item, next) => Number(item) + Number(next));
+const converToNumber = parseInt(convertSumm);
+console.log(typeof converToNumber);
