@@ -382,3 +382,93 @@ const lolToMassiv = lol.toString().split(``);
 const convertSumm = lolToMassiv.reduce((item, next) => Number(item) + Number(next));
 const converToNumber = parseInt(convertSumm);
 console.log(typeof converToNumber);
+
+//!-----------------------------------------------------
+
+function multiplyAll(array) {
+	const goTomassiv = array;
+	return function (num) {
+		const newMass = goTomassiv.map((item) => item * num);
+		return newMass;
+	};
+}
+const jostko = multiplyAll([1, 2, 4, 5]);
+const newNumber = jostko(2);
+
+console.log(newNumber);
+
+const points = ["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"];
+const strings = points.join();
+const convertToMass = strings.split(``);
+
+const filters1 = convertToMass.filter((item) => !isNaN(item));
+let itogRes = 0;
+for (let i = 0; i < filters1.length; i += 2) {
+	if (filters1[i] > filters1[i + 1]) {
+		itogRes += 3;
+	} else if (filters1[i] < filters1[i + 1]) {
+		itogRes += 0;
+	} else if (filters1[i] === filters1[i + 1]) {
+		itogRes += 1;
+	}
+}
+
+console.log(filters1, itogRes);
+
+function twoSort(s) {
+	const sortingItog = s.sort();
+	const pedik = sortingItog[0].split(``).join(`***`);
+	return pedik;
+}
+
+const digital = `45385593107843568`;
+let strings10 = ``;
+for (let i = 0; i < digital.length; i++) {
+	switch (digital[i] >= 5) {
+		case true:
+			strings10 += 1;
+			break;
+		default:
+			strings10 += 0;
+	}
+}
+console.log(strings10);
+
+const numbr = [1, 2];
+
+console.log(numbr[numbr.length - 1]);
+
+const lolitaOne = `1,3,4,5`;
+let characters = lolitaOne.split(`,`);
+characters.shift();
+characters.pop();
+console.log(characters.join(" "));
+
+console.log(newMassSort);
+newFiltMass.pop();
+newFiltMass.shift();
+
+// if (vars.length >= 0 && vars.length >= 1 && vars.length <= 2) {
+// 	console.log(`null ${vars.length}`);
+// } else if (vars.length === 0) {
+// 	console.log(`null ${vars.length}`);
+// }
+// const pizdaRoga = vars.filter((item) => item !== `,`);
+// console.log(pizdaRoga);
+
+// const fixMass = pizdaRoga.join(` `);
+// console.log(fixMass);
+
+console.log(Math.pow(-2, 3));
+
+console.log(`hello`.reverse());
+
+console.log(Math.pow(0, 3) === 0);
+
+const jop1 = `Mary Had A Little Lamb`;
+let mujo = 0;
+console.log(jop1[0].charCodeAt(0));
+for (let i = 0; i < jop1.length; i++) {
+	mujo += jop1[i].charCodeAt(0);
+}
+console.log(mujo);
