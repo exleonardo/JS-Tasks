@@ -472,3 +472,29 @@ for (let i = 0; i < jop1.length; i++) {
 	mujo += jop1[i].charCodeAt(0);
 }
 console.log(mujo);
+//!---------------------------------------------------------
+//https://www.codewars.com/kata/577a6e90d48e51c55e000217/solutions/javascript
+
+let myaso = 23;
+
+let src = 0;
+for (let i = 0; ; i++) {
+	if (myaso % 2 == 0) {
+		myaso = myaso / 2;
+		src++;
+	} else {
+		if (myaso === 1) {
+			break;
+		}
+		myaso = myaso * 3 + 1;
+		src++;
+	}
+}
+console.log(src);
+
+//!-----------------------------------------------
+//https://www.codewars.com/kata/55a5bfaa756cfede78000026/solutions/javascript
+
+function problem(x) {
+	return typeof x == "number" ? x * 50 + 6 : "Error";
+}
