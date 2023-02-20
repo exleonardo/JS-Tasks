@@ -498,3 +498,20 @@ console.log(src);
 function problem(x) {
 	return typeof x == "number" ? x * 50 + 6 : "Error";
 }
+
+function shorter_reverse_longer(a, b) {
+	const reverseB = [...b];
+	const reverseA = [...a];
+	const btu = reverseB.reverse().join(``);
+	const atu = reverseA.reverse().join(``);
+	console.log(btu);
+	if (a.length > b.length) {
+		return console.log(b + atu + b);
+	} else if (a.length === b.length) {
+		return console.log(b + atu + b);
+	} else {
+		console.log(a + btu + a);
+	}
+}
+
+const strict = shorter_reverse_longer("first", "abcde");
