@@ -520,12 +520,33 @@ const strict = shorter_reverse_longer("first", "abcde");
 
 function hamming(a, b) {
 	let count = 0;
-
 	for (let i = 0; i < a.length; i++) {
 		if (a[i] !== b[i]) {
 			count++;
 		}
 	}
-
 	return count;
 }
+
+const pass = "Give me liberty or give me death";
+
+const passToArr = pass.split(` `);
+
+let checkMass = pass[0];
+
+for (let i = 0; i < pass.length; i++) {
+	if (pass[i - 1] === ` `) {
+		checkMass += pass[i];
+	}
+}
+const fixItem = [...checkMass];
+for (let i = 0; i < fixItem.length; i++) {
+	if (fixItem[i] === `i` || fixItem[i] === `I`) {
+		fixItem[i] = 1;
+	} else if (fixItem[i] === `o` || fixItem[i] === `O`) {
+		fixItem[i] = 0;
+	} else if (fixItem[i] === `s` || fixItem[i] === `S`) {
+		fixItem[i] = 5;
+	}
+}
+console.log(fixItem.join(``));
