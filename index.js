@@ -550,3 +550,54 @@ for (let i = 0; i < fixItem.length; i++) {
 	}
 }
 console.log(fixItem.join(``));
+//!--------------------------------------------------
+//https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript
+let strConvert = `The-Stealth-Warrior`;
+
+let final = "";
+let sortString = "";
+let newString = "";
+let converter = strConvert.split("");
+//удаляем символы
+for (let i = 0; i < converter.length; i++) {
+	if (converter[i] === "_" || converter[i] === "-") {
+		newString += " ";
+	} else {
+		newString += converter[i];
+	}
+} //массив без символов
+const splitNewString = newString.split(" ");
+//----
+
+const item = function (char) {
+	if (char == 0) return "";
+	let strings = "";
+	const convertStr = char.split("");
+	if (convertStr[0] === convertStr[0].toUpperCase()) {
+		strings += convertStr[0];
+	} else {
+		strings += convertStr[0].toUpperCase();
+	}
+	for (let i = 1; i < char.length; i++) {
+		strings += char[i];
+	}
+	return strings;
+};
+//-----
+let letters = strConvert[0];
+if (strConvert == 0) {
+	console.log(`j`);
+}
+
+// console.log(strConvert[0].toUpperCase() !== letters);
+if (strConvert[0].toUpperCase() !== letters) {
+	final += splitNewString[0];
+} else if (strConvert[0].toUpperCase() == letters) {
+	final += splitNewString[0];
+}
+// передаем значение в функцию
+for (let i = 1; i < splitNewString.length; i++) {
+	final += item(splitNewString[i]);
+}
+
+console.log(final);
