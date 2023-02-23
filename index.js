@@ -610,12 +610,12 @@ const min = numb.reduce((acc, item) => {
 	return acc;
 });
 console.log(min);
-
+//!---------------------------------------
 const truesMass = [true, true, true, false, true, true, true, true, true, false, true, false];
 
 const filtNumb = truesMass.filter((acc) => acc);
 console.log(filtNumb.length);
-
+//!---------------------------------------
 let digit = 35231;
 const g = digit + ``;
 const splitting = g.split(``);
@@ -623,3 +623,13 @@ const r = [];
 const jops = splitting.forEach((item) => r.push(Number(item)));
 // const jop12 = g.split("").reverse();
 console.log(r.reverse());
+//!-------------------------
+const abbName = `RRIztnSsaIfc ixKlAg`;
+let addStr = abbName[0].toUpperCase() + `.`;
+for (let i = 0; i < abbName.length; i++) {
+	if (abbName[i - 1] == ` `) {
+		addStr += abbName[i].toUpperCase();
+	}
+}
+console.log(addStr);
+//!-------------------------
