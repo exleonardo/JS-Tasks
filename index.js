@@ -601,3 +601,12 @@ for (let i = 1; i < splitNewString.length; i++) {
 }
 
 console.log(final);
+
+const numb = [78, 56, 232, 12, 8];
+const min = numb.reduce((acc, item) => {
+	if (acc > item) {
+		acc = item;
+	}
+	return acc;
+});
+console.log(min);
