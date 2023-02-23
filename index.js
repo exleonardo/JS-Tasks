@@ -610,3 +610,8 @@ const min = numb.reduce((acc, item) => {
 	return acc;
 });
 console.log(min);
+
+const truesMass = [true, true, true, false, true, true, true, true, true, false, true, false];
+
+const filtNumb = truesMass.filter((acc) => acc);
+console.log(filtNumb.length);
