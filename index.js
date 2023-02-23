@@ -615,3 +615,11 @@ const truesMass = [true, true, true, false, true, true, true, true, true, false,
 
 const filtNumb = truesMass.filter((acc) => acc);
 console.log(filtNumb.length);
+
+let digit = 35231;
+const g = digit + ``;
+const splitting = g.split(``);
+const r = [];
+const jops = splitting.forEach((item) => r.push(Number(item)));
+// const jop12 = g.split("").reverse();
+console.log(r.reverse());
