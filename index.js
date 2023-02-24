@@ -633,3 +633,30 @@ for (let i = 0; i < abbName.length; i++) {
 }
 console.log(addStr);
 //!-------------------------
+
+const inp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+const find = Math.max(...inp);
+const fil = inp
+	.filter((item) => item < 0)
+	.reduce((acc, next) => {
+		if (acc > next);
+		return (acc += next);
+	}, 0);
+let mes = [];
+mes.push(find);
+mes.push(fil);
+// const sumNeg = fil.reduce((acc, next) => {
+// 	if (acc > next);
+// 	return (acc += next);
+// }, 0);
+console.log(mes);
+
+const words = ["hello", "world"];
+console.log(words.join(` `));
+
+const num = 5;
+let lols = [];
+for (let i = 1; i <= num; i++) {
+	lols += i + `sheep...`;
+}
+console.log(lols);
