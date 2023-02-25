@@ -704,3 +704,24 @@ const reduc = zames.reduce((acc, next) => (acc += next + next), `A`);
 
 const zalup = reduc.slice(1);
 console.log(zalup);
+
+function correct(string) {
+	let newStr = ``;
+	for (let i = 0; i < string.length; i++) {
+		switch (string[i]) {
+			case 5:
+				newStr += `S`;
+				break;
+			case 0:
+				newStr += `O`;
+				break;
+			case 1:
+				newStr += `I`;
+				break;
+			default:
+				newStr += string[i];
+		}
+	}
+	return newStr;
+}
+console.log(correct(`L0ND0N`));
