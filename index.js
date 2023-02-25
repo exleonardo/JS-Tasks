@@ -660,3 +660,47 @@ for (let i = 1; i <= num; i++) {
 	lols += i + `sheep...`;
 }
 console.log(lols);
+
+// const jopaPlus = [5, 5, 6, 5, 5, 5, 5, 6];
+// const newMerc = [];
+// const maxNum = Math.max(...jopaPlus);
+// const lengthMass = jopaPlus.length - newMerc.length;
+
+// for (let i = 0; i < jopaPlus.length; i++) {
+// 	if (jopaPlus[i] == jopaPlus[i + 1]) {
+// 		newMerc.push(jopaPlus[i]);
+// 		newMerc.push(jopaPlus[i + 1]);
+// 		break;
+// 	}
+// }
+// for (let i = 0; i < lengthMass; i++) {
+// 	newMerc.push(maxNum);
+// }
+
+// console.log(newMerc);
+
+const jopaPlus = [1, 4, 6, 7, 8, 9, 10];
+const newMerc = [jopaPlus[0]];
+
+let numbMax = jopaPlus[0];
+
+for (let i = 1; i <= jopaPlus.length; i++) {
+	if (numbMax < jopaPlus[i]) {
+		numbMax = jopaPlus[i];
+		newMerc.push(numbMax);
+	} else {
+		newMerc.push(numbMax);
+	}
+}
+newMerc.pop();
+console.log(newMerc);
+const boo = [`1`];
+const reduces = boo.reduce((acc, next) => Number(acc) + Number(next));
+console.log(typeof reduces);
+
+const names = `Adidas`;
+const zames = names.split("");
+const reduc = zames.reduce((acc, next) => (acc += next + next), `A`);
+
+const zalup = reduc.slice(1);
+console.log(zalup);
