@@ -743,3 +743,7 @@ function rentalCarCost(d) {
 
 const carlost = rentalCarCost(3);
 console.log(carlost);
+
+function greet(name, owner) {
+	return name === owner ? `Hello boss` : "Hello guest";
+}
