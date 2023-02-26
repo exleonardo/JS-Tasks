@@ -725,3 +725,21 @@ function correct(string) {
 	return newStr;
 }
 console.log(correct(`L0ND0N`));
+
+function countBy(x, n) {
+	let step = 0;
+	let pz = [];
+	for (let i = 0; i < n; i++) {
+		pz.push((step += x));
+	}
+	return pz;
+}
+const lolsz = countBy(46, 13);
+console.log(lolsz);
+
+function rentalCarCost(d) {
+	return d < 3 ? 40 * d : d >= 3 && d < 7 ? d * 40 - 20 : d * 40 - 50;
+}
+
+const carlost = rentalCarCost(3);
+console.log(carlost);
