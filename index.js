@@ -761,3 +761,19 @@ function sumArray(array) {
 }
 const sumF = sumArray([0, 1, 6, 10, 10]);
 console.log(sumF);
+
+function strCount(str, letter) {
+	// if (str.length === 0) {
+	// 	return 0;
+	// }
+	let sum = 0;
+	for (let i = 0; i < str.length; i++) {
+		if (str[i] === letter) {
+			sum = sum + 1;
+		}
+	}
+	return sum;
+}
+
+const strictEq = strCount("Hello", "o");
+console.log(strictEq);
