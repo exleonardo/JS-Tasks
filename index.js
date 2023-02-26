@@ -747,3 +747,17 @@ console.log(carlost);
 function greet(name, owner) {
 	return name === owner ? `Hello boss` : "Hello guest";
 }
+
+function sumArray(array) {
+	if (array == null || array.length < 3) {
+		return 0;
+	}
+	const min = Math.min(...array);
+	const max = Math.max(...array);
+	let numSum = 0;
+	numSum = array.reduce((acc, next) => (acc += next));
+	const refact = min + max;
+	return numSum - refact;
+}
+const sumF = sumArray([0, 1, 6, 10, 10]);
+console.log(sumF);
