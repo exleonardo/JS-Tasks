@@ -777,3 +777,49 @@ function strCount(str, letter) {
 
 const strictEq = strCount("Hello", "o");
 console.log(strictEq);
+
+function oddCount(n) {
+	let num = 0;
+	for (let i = 0; i < n; i++) {
+		if (i % 2 == 0) {
+			num += 1;
+		}
+	}
+	return num - 1;
+}
+
+const odder = oddCount(15023);
+console.log(odder);
+
+function stringy(size) {
+	let numb = `1`;
+	for (let i = 1; i < size; i++) {
+		if (numb[i - 1] == `1`) {
+			numb += `0`;
+		} else {
+			numb += `1`;
+		}
+	}
+	return numb;
+}
+
+const str = stringy(15);
+console.log(str.length);
+
+const mar = ["bad", "good", "bad", "bad", "good"];
+let numbs = 0;
+for (let i = 0; i < mar.length; i++) {
+	if (mar[i] === `good`) {
+		numbs++;
+	}
+}
+if (numbs == 1) {
+	console.log(`Publish!`);
+} else if (numbs == 0) {
+	console.log(`Fail`);
+} else if (numbs == 2) {
+	console.log(`Publish!`);
+} else {
+	console.log(`I smell a series!`);
+}
+console.log(numbs);
