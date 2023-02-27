@@ -823,3 +823,14 @@ if (numbs == 1) {
 	console.log(`I smell a series!`);
 }
 console.log(numbs);
+
+function multiTable(number) {
+	let table = ``;
+	for (let i = 1; i <= 10; i++) {
+		table += `${i} * ${number} = ${i * number}\n`;
+	}
+	return table.slice(0, table.length - 1);
+}
+
+const mult = multiTable(5);
+console.log(mult);
